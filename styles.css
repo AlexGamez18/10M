@@ -1,0 +1,123 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdfaf6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+header {
+  background: linear-gradient(135deg, #f78ca0, #f9748f);
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  background: #ffe0e0;
+  padding: 10px 0;
+}
+nav button {
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+nav button:hover {
+  background-color: #fddede;
+}
+.section {
+  display: none;
+  padding: 20px;
+}
+.section.active {
+  display: block;
+}
+/* Caja virtual */
+.caja-virtual {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.detalle {
+  background-color: #fff;
+  border: 2px solid #f9748f;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s;
+}
+.detalle:hover {
+  transform: scale(1.05);
+}
+.detalle .contenido {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 0.9em;
+  overflow-y: auto;
+}
+/* Minijuego */
+.minijuego {
+  text-align: center;
+}
+.minijuego button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f78ca0;
+  color: #fff;
+}
+.resultado {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #f9748f;
+}
+
+/* Recuerdos: diseño en grid */
+.grid-recuerdos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.tarjeta-mes {
+  background-color: #fff;
+  border: 2px solid #f78ca0;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.tarjeta-mes:hover {
+  transform: translateY(-5px);
+}
+.tarjeta-mes h3 {
+  color: #f9748f;
+  margin-bottom: 10px;
+}
+.tarjeta-mes p {
+  color: #333;
+}

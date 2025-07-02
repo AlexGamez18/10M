@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>10 Meses Juntos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1>💖 10 MESES JUNTOS 💖</h1>
+    <p>Un viaje lleno de recuerdos, detalles y sorpresas.</p>
+  </header>
+
+  <nav>
+    <button onclick="mostrarSeccion('recuerdos')">RECUERDOS</button>
+    <button onclick="mostrarSeccion('caja')">CAJA VIRTUAL</button>
+    <button onclick="mostrarSeccion('juego')">MINIJUEGO</button>
+  </nav>
+
+  <!-- Sección 1: Recuerdos -->
+  <div id="recuerdos" class="section active">
+    <h2>❤️ RECUERDOS DE NUESTROS 10 MESES ❤️</h2>
+    <div id="meses" class="grid-recuerdos">
+      <div class="tarjeta-mes">
+        <h3>💞 MES 1 💞</h3>
+        <p>Empezamos con mucho amor, las cosas empezaron bonitas y me encanto comenzarlo, la verdad que
+          no me arrepiento de haberte hablado ese dia. 💞</p>
+      </div>
+      <div class="tarjeta-mes">
+        <h3>🥰 MES 2 🥰</h3>
+        <p>Lo que empezo bonito se torno hermoso y las cosas fluyeron mucho más, aunque las cosas se
+          pusieron difiiciles, las superamos juntos. 🥰</p>
+      </div>
+      <div class="tarjeta-mes">
+        <h3>💝 MES 3 💝</h3>
+        <p>Nuestro tercer mes que pasamos juntos, fue bonito como los regalos no faltaban entre nosotros. 💝</p>
+      </div>
+      <div class="tarjeta-mes">
+        <h3>💘 MES 4 💘</h3>
+        <p>Este mes fue hermoso, pasamos nuestra primera navidad como novios, el primer año nuevo que estuvimos
+          juntos también y cumplimos 4 meses de novios jejeje. 💘</p>
+      </div>
+      <div class="tarjeta-mes">
+        <h3>😘 MES 5 😘</h3>
+        <p>Aquí empezabamos a tener peleas y discuciones un poco seguido pero al final pudimos hacer las cosas bien
+          y sobrellevar nuestras diferencias y todo mi amor. 😘</p>
+      </div>
+      <div class="tarjeta-mes">
+        <h3>💕 MES 6 💕</h3>
+        <p>Las cosas estaban bien pero aun así había existiendo demasiadas diferencias entre nosotros, aun así
+          siempre intentabamos hacer las cosas de la mejor manera para sacar adelante estos 6 meses juntos. 💕</p>
+      </div>
+      <div class="tarjeta-mes">
+        <h3>💗 MES 7 💗</h3>
+        <p>Sobre este dia que cumplimos los 7 meses, me quedo muy marcado lo que es el video que me hiciste, que
+          enserio me encanto mucho y también algo que ame fue que cree una foto con IA juntos jejeje. 💗</p>
+      </div>
+      <div class="tarjeta-mes">
+        <h3>💖 MES 8 💖</h3>
+        <p>Creo que fue el mes que mas peleamos en lo que llevamos de tiempo juntos, pero claro no siempre fue así
+          teniamos nuestras llamadas, mirabamos peliculas o series juntos mi amor y la pasabamos muy bien solitos jejeje
+          tu sabes a que me refiero. 💖</p>
+      </div>
+      <div class="tarjeta-mes">
+        <h3>💛 MES 9 💛</h3>
+        <p>Siendo sincero sobre este mes... Fue dificil, fue un mes de mas bajos que altos, las cosas se volvieron
+          malas,
+          despues de lo que paso el principio de ese mes fue un caos, aun asi las cosas estan bien y seguimos juntos
+          luchando por esto. 💛</p>
+      </div>
+      <div class="tarjeta-mes">
+        <h3>💓 MES 10 💓</h3>
+        <p>¡Te amo mucho más y espero que cumplamos muchos más! 💓</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Sección 2: Caja Virtual -->
+  <div id="caja" class="section">
+    <h2>CAJA VIRTUAL</h2>
+    <div class="caja-virtual">
+      <div class="detalle" onclick="mostrarDetalle(this)">
+        <span>💓 Detalle 1 💓</span>
+        <div class="contenido">
+          <p>¡Vale para lo que quieras!</p>
+        </div>
+      </div>
+      <div class="detalle" onclick="mostrarDetalle(this)">
+        <span>💝 Detalle 2 💝</span>
+        <div class="contenido">
+          <p>Eres mi todo, mi niña, mi princesa, mi amor, mi bebe, mi vida, mi cielo, mi mundo, mi sol, mi reina. Todo, eres todo.</p>
+        </div>
+      </div>
+      <div class="detalle" onclick="mostrarDetalle(this)">
+        <span>😘 Detalle 3 😘</span>
+        <div class="contenido">
+          <p>Eres lo mejor que me ha pasado mi niña!!</p>
+        </div>
+      </div>
+      <div class="detalle" onclick="mostrarDetalle(this)">
+        <span>💞 Detalle 4 💞</span>
+        <div class="contenido">
+          <p>Gracias por estar en mi vida, gracias por hacer cada dia de ellos especiales. </p>
+        </div>
+      </div>
+      <div class="detalle" onclick="mostrarDetalle(this)">
+        <span>💖 Detalle 5 💖</span>
+        <div class="contenido">
+          <p>Ahora eres mi novia ahora pero nos casaremos y seras mi esposa y seras la madre de mis hijos. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección 3: Minijuego -->
+  <div id="juego" class="section">
+    <h2>¿CUANTO ME CONOCES?</h2>
+    <p>Responde a las siguientes preguntas y descubre una sorpresa final.</p>
+    <div class="minijuego">
+      <button onclick="responder(1)">Pregunta 1: ¿Cuales son mi colores favoritos?</button>
+      <button onclick="responder(2)">Pregunta 2: ¿Cuando empezamos a hablar?</button>
+      <button onclick="responder(3)">Pregunta 3: ¿Mi cumpleaños?</button>
+      <button onclick="responder(3)">Pregunta 4: ¿Mi anime favorito?</button>
+    </div>
+    <div class="resultado" id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
