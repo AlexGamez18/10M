@@ -43,7 +43,7 @@ function responder(preguntaId) {
 
 // Verificar si el minijuego está completo
 function verificarResultado() {
-  if (respuestasCorrectas >= 3) {
+  if (respuestasCorrectas >= 4) {
     document.getElementById('resultado').innerText = "¡Felicidades! Has demostrado cuánto me conoces. Aquí va un mensaje especial: 'Cada día a tu lado es una nueva aventura, te amo!'";
   }
 }
